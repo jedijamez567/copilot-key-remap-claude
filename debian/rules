@@ -1,0 +1,9 @@
+#!/usr/bin/make -f
+
+%:
+	dh $@
+
+override_dh_auto_install:
+	install -D -m 0755 main.py $(CURDIR)/debian/copilot-key-handler/usr/lib/copilot-key-handler/main.py
+	install -D -m 0644 config.yaml.default $(CURDIR)/debian/copilot-key-handler/etc/copilot-key-handler/config.yaml
+	install -D -m 0644 copilot-key-handler.service $(CURDIR)/debian/copilot-key-handler/lib/systemd/system/copilot-key-handler.service

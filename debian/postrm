@@ -1,0 +1,10 @@
+#!/bin/bash
+set -e
+
+if [ "$1" = "purge" ]; then
+    rm -rf /etc/copilot-key-handler
+fi
+
+systemctl daemon-reload 2>/dev/null || true
+
+#DEBHELPER#

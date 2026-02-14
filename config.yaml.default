@@ -1,0 +1,23 @@
+# Copilot Key Handler Configuration
+# Copy this file to /etc/copilot-key-handler/config.yaml and edit as needed.
+
+# Input device path for the keyboard with the Copilot key.
+# Find yours with: cat /proc/bus/input/devices
+# Look for the keyboard device and use /dev/input/eventN
+device: auto
+
+# Terminal emulator command to launch.
+# Supports: gnome-terminal, kitty, alacritty
+# gnome-terminal uses --working-directory=DIR -- CMD
+# kitty uses --directory DIR CMD
+# alacritty uses --working-directory DIR -e CMD
+terminal: gnome-terminal
+
+# Path to the claude binary. Set to "auto" to search common locations.
+claude_path: auto
+
+# Linux username to run claude as. Set to "auto" to detect from SUDO_USER or loginctl.
+user: auto
+
+# X11 display (usually :0)
+display: ":0"

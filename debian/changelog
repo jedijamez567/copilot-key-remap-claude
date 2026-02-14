@@ -1,0 +1,8 @@
+copilot-key-handler (0.1.0-1) noble; urgency=low
+
+  * Initial release
+  * Auto-detect keyboard device, user, and Claude Code path
+  * Support for gnome-terminal, kitty, and alacritty
+  * Configurable via /etc/copilot-key-handler/config.yaml
+
+ -- Dakota Smith <smith.dakota52@gmail.com>  Fri, 14 Feb 2026 00:00:00 +0000
