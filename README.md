@@ -31,7 +31,7 @@ sudo systemctl enable --now copilot-key-remap-claude
 sudo apt install python3-evdev python3-yaml xdotool x11-utils
 
 # Clone and install
-git clone https://github.com/jedijamez/copilot-key-remap-claude.git
+git clone https://github.com/jedijamez567/copilot-key-remap-claude.git
 cd copilot-key-remap-claude
 sudo install -D -m 0755 main.py /usr/lib/copilot-key-remap-claude/main.py
 sudo install -D -m 0644 config.yaml.default /etc/copilot-key-remap-claude/config.yaml
